@@ -20,7 +20,7 @@ jobs:
       - name: Auditoria de variables
         run: |
           echo "Plataforma: ${{ env.platform }}"
-          echo "Version: ${{ vars.PROJECT_VERSION }}"
+          echo "Version: ${{ vars.project_version }}"
 
       - name: Ejecucion condicional (Solo AWS)
         if: env.platform == 'aws'
